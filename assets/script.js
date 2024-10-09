@@ -12,3 +12,4 @@ soundMenu.addEventListener('click', () => {
         playImg.src = 'play_mute.png';
     }
 });
+ 

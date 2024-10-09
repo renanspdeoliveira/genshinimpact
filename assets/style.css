@@ -1,12 +1,10 @@
 body,
 html {
-background-image: url();
-    background-position: center;
-    width: auto;
-
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+    background-image: url(background.jpg);
+    width: 100%;
+    background-size: 100%;
+    
+    
     --font-principal: Tahoma, Helvetica, Arial, sans-serif !important;
 }
 
@@ -67,20 +65,26 @@ background-image: url();
 }
 
 .imagemmain {
-    width: 10%;
+    width: 40%;
 }
 
-.imagemmain:hover {
- 
-}
+
 
 .menu_personagens {
     display: flex;
     justify-content: space-between;
+    font-family: var(--font-principal);
+
 }
-.mainnews{
-    margin-top: 20%;
-    padding: 3px;
+
+.mainnews {
+    margin-top: 5%;
+    padding: 0px;
     display: flex;
     justify-content: center;
+}
+.button-element{
+    background: #ffffff80;
+    border: none;
+    cursor: pointer;
 }
