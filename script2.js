@@ -1,23 +1,10 @@
- 
-    // Função para salvar a posição de rolagem
-    function saveScrollPosition() {
-        sessionStorage.setItem('scrollPosition', window.scrollY);
-    }
+const imageLink = document.querySelector('.image-link');
+const popup = document.getElementById('popup');
 
-    // Função para restaurar a posição de rolagem
-    function restoreScrollPosition() {
-        const scrollPosition = sessionStorage.getItem('scrollPosition');
-        if (scrollPosition !== null) {
-            window.scrollTo(0, parseInt(scrollPosition, 10));
-        }
-    }
+imageLink.addEventListener('mouseover', () => {
+    popup.style.display = 'flex'; // Mostrar o quadrado
+});
 
-    // Salvar a posição de rolagem quando a página for atualizada
-    window.addEventListener('beforeunload', saveScrollPosition);
-    
-    // Restaurar a posição de rolagem quando a página for carregada
-    window.addEventListener('load', restoreScrollPosition);
- 
-
-
-    
+imageLink.addEventListener('mouseout', () => {
+    popup.style.display = 'none'; // Esconder o quadrado
+});
