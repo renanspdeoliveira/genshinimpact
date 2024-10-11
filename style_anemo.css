@@ -1,6 +1,6 @@
 body,
 html {
-    background-image: url(assets/pyro/background.webp);
+    background-image: url(assets/mondstadt/background.jpg);
     background-repeat: no-repeat;
     width: 100%;
 
@@ -102,13 +102,13 @@ html {
 
 .imagem_login {
     border: 1px solid black;
-    background: linear-gradient(to bottom, #fd7200, #f1da04);
+    background: linear-gradient(to bottom, #04bfd8, #04aef1);
 
 
 }
 
 .imagem_login:hover {
-    background: #ff7300;
+    background: #0059ff;
 
 }
 
@@ -148,6 +148,6 @@ html {
 .imagem_hover {
     width: 75%;
     border-radius: 10px;
-    border: 10px solid rgb(255, 136, 0);
+    border: 10px solid rgb(0, 238, 255);
 
 }

@@ -1,10 +1,14 @@
-const imageLink = document.querySelector('.image-link');
-const popup = document.getElementById('popup');
+// Seleciona todos os links e caixas
+const hoverLinks = document.querySelectorAll(".hoverLink");
+const hoverBoxes = document.querySelectorAll(".hover-box");
 
-imageLink.addEventListener('mouseover', () => {
-    popup.style.display = 'flex'; // Mostrar o quadrado
-});
+// Adiciona eventos de mouse para cada link
+hoverLinks.forEach((link, index) => {
+    link.addEventListener("mouseenter", () => {
+        hoverBoxes[index].style.display = "block"; // Mostra a caixa correspondente
+    });
 
-imageLink.addEventListener('mouseout', () => {
-    popup.style.display = 'none'; // Esconder o quadrado
+    link.addEventListener("mouseleave", () => {
+        hoverBoxes[index].style.display = "none"; // Esconde a caixa correspondente
+    });
 });
